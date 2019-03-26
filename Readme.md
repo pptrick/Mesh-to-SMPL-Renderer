@@ -25,6 +25,7 @@ v 1.0425 0.942224 0.598045
 
 下面为各对应点的三维效果图：
 
+<img src="https://github.com/pptrick/Mesh-to-SMPL-Renderer/tree/master/show%20readme_pic/makelink.png" width="300"/>
 <img src=".\pic\makelink.png" style="zoom:90" />
 
 找对应点的方法是利用同框架mesh和SMPL模型比较相近的特点，寻找每个SMPL上的点在mesh上的（几何意义上）最近邻。
