@@ -99,4 +99,7 @@ Body Segmentation可输出mesh根据不同身体部位的分割渲染图（SMPL�
 详见每个文件的readme
 
 **运行时需要配置openCV，openGL3.4版本**
+
 **openGL库：glfw, glm, glew**
+
+> copyright reserved @pptrick
