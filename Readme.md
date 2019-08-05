@@ -25,7 +25,7 @@ v 1.0425 0.942224 0.598045
 
 下面为各对应点的三维效果图：
 
-<img src=".\pic\makelink.png" style="zoom:90" />
+<img src="https://github.com/pptrick/Mesh-to-SMPL-Renderer/blob/master/readme_pic/makelink.png" width="300"/>
 
 找对应点的方法是利用同框架mesh和SMPL模型比较相近的特点，寻找每个SMPL上的点在mesh上的（几何意义上）最近邻。
 
@@ -41,7 +41,7 @@ v 1.0425 0.942224 0.598045
 
 RGB Rendering可将一个或多个mesh模型渲染到一张RGB背景图像上，并为其添加光照效果：
 
-<img src=".\pic\RGB_Rendering.png" style="zoom:70" />
+<img src="https://github.com/pptrick/Mesh-to-SMPL-Renderer/blob/master/readme_pic/RGB_Rendering.png" width="300"/>
 
 具体实现方法是将模型通过矩阵变换投影到二维平面上。输入为mesh模型和背景图片，输出为渲染出来的2DRGB合成图。此处采用了openGL以及openCV图像处理框架。
 
@@ -55,7 +55,7 @@ RGB Rendering可将一个或多个mesh模型渲染到一张RGB背景图像上，
 
 深度图渲染与上述渲染过程相似，只需要将颜色信息改换成z方向坐标信息即可：
 
-<img src=".\pic\depth_Rendering.png" style="zoom:70" />
+<img src="https://github.com/pptrick/Mesh-to-SMPL-Renderer/blob/master/readme_pic/depth_Rendering.png" width="300"/>
 
 <u>**limitation**</u>: 对于很多人体的情况，仍然会出现穿模问题；同时当人体非常靠近“镜头”时，会出现畸变现象。
 
@@ -84,7 +84,7 @@ RGB Rendering可将一个或多个mesh模型渲染到一张RGB背景图像上，
 
 Body Segmentation可输出mesh根据不同身体部位的分割渲染图（SMPL也可）：
 
-<img src=".\pic\complete_segment.png" style="zoom:70" />
+<img src="https://github.com/pptrick/Mesh-to-SMPL-Renderer/blob/master/readme_pic/complete_segment.png" width="300"/>
 
 此处只需利用SMPL model的身体部位信息，将mesh上有SMPL对应的各个顶点“身体部位信息”标定即可。其中身体部位信息可转换为颜色信息输出。
 
@@ -97,3 +97,9 @@ Body Segmentation可输出mesh根据不同身体部位的分割渲染图（SMPL�
 具体使用时，需要单独运行makelink和render。
 
 详见每个文件的readme
+
+**运行时需要配置openCV，openGL3.4版本**
+
+**openGL库：glfw, glm, glew**
+
+> copyright reserved @pptrick
